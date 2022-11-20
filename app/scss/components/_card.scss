@@ -21,11 +21,19 @@
     & h2 {
       color: var(--drk-cyan);
       margin-bottom: rem(30);
+
+      @include breakpoint-up(medium) {
+        margin-bottom: rem(33);
+      }
     }
 
     & h3 {
       color: var(--bright-yellow);
       margin-bottom: rem(24);
+
+      @include breakpoint-up(medium) {
+        margin-bottom: rem(15);
+      }
     }
 
     & p {
@@ -37,8 +45,13 @@
     background-color: var(--drk-cyan);
     color: white;
 
-    & h1 {
+    & h2 {
       margin-bottom: rem(25);
+
+      @include breakpoint-up(medium) {
+        font-size: rem(18);
+        margin-bottom: rem(18);
+      }
     }
 
     & .price {
@@ -47,6 +60,10 @@
       font-weight: bold;
       margin-bottom: rem(15);
       margin-right: rem(14);
+
+      @include breakpoint-up(medium) {
+        margin-bottom: rem(15);
+      }
     }
 
     & .per {
@@ -56,6 +73,10 @@
 
     & p {
       color: white;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: rem(15);
+      }
     }
 
     & .btn {
@@ -78,6 +99,12 @@
   &__description {
     background-color: var(--light-cyan);
     color: white;
+
+    @include breakpoint-up(medium) {
+      ul li {
+        margin: 0;
+      }
+    }
 
     & ul li:hover {
       opacity: 0.7;

@@ -27,11 +27,11 @@ body {
     padding: rem(30) rem(25);
 
     @include breakpoint-up(medium) {
-      padding: rem(42);
+      padding: rem(40);
     }
   }
 
   @include breakpoint-up(medium) {
-    min-height: rem(477);
+    max-height: rem(474);
   }
 }

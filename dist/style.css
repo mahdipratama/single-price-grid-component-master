@@ -56,12 +56,12 @@ body {
 }
 @media (min-width: 37.5rem) {
   .container > div {
-    padding: 2.625rem;
+    padding: 2.5rem;
   }
 }
 @media (min-width: 37.5rem) {
   .container {
-    min-height: 29.8125rem;
+    max-height: 29.625rem;
   }
 }
 
@@ -74,7 +74,7 @@ h3 {
 }
 
 p {
-  margin-top: 0;
+  margin: 0;
   color: var(--gray-blue);
 }
 
@@ -91,6 +91,7 @@ ul {
 
 ul li {
   list-style-type: none;
+  margin-bottom: 5.6px;
 }
 
 .card {
@@ -117,9 +118,19 @@ ul li {
   color: var(--drk-cyan);
   margin-bottom: 1.875rem;
 }
+@media (min-width: 37.5rem) {
+  .card__header h2 {
+    margin-bottom: 2.0625rem;
+  }
+}
 .card__header h3 {
   color: var(--bright-yellow);
   margin-bottom: 1.5rem;
+}
+@media (min-width: 37.5rem) {
+  .card__header h3 {
+    margin-bottom: 0.9375rem;
+  }
 }
 .card__header p {
   line-height: 1.5;
@@ -128,8 +139,14 @@ ul li {
   background-color: var(--drk-cyan);
   color: white;
 }
-.card__subscription h1 {
+.card__subscription h2 {
   margin-bottom: 1.5625rem;
+}
+@media (min-width: 37.5rem) {
+  .card__subscription h2 {
+    font-size: 1.125rem;
+    margin-bottom: 1.125rem;
+  }
 }
 .card__subscription .price {
   display: inline-block;
@@ -138,12 +155,22 @@ ul li {
   margin-bottom: 0.9375rem;
   margin-right: 0.875rem;
 }
+@media (min-width: 37.5rem) {
+  .card__subscription .price {
+    margin-bottom: 0.9375rem;
+  }
+}
 .card__subscription .per {
   display: inline-block;
   color: rgba(244, 244, 244, 0.9176470588);
 }
 .card__subscription p {
   color: white;
+}
+@media (min-width: 37.5rem) {
+  .card__subscription p {
+    margin-bottom: 0.9375rem;
+  }
 }
 .card__subscription .btn {
   background-color: var(--bright-yellow);
@@ -162,6 +189,11 @@ ul li {
 .card__description {
   background-color: var(--light-cyan);
   color: white;
+}
+@media (min-width: 37.5rem) {
+  .card__description ul li {
+    margin: 0;
+  }
 }
 .card__description ul li:hover {
   opacity: 0.7;
