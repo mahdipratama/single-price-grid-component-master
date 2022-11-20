@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  background-color: var(--light-gray);
+}
+
+:root {
+  --light-cyan: hsl(179, 62%, 52%);
+  --drk-cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --gray-blue: hsl(218, 22%, 67%);
+  --light-gray: hsl(204, 43%, 93%);
+}
+
+:root {
+  --main-font: "Karla", sans-serif;
+}
+
+/*
+  // Centering Block
+
+  // max-width: 1000px;
+
+  // margin: 0 auto;
+  margin-inline: auto;
+
+  // padding-left: 20px;
+  // padding-right: 20px;
+  width: min(100% - u.rem(40), u.rem(1000));
+  */
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 0 1.25rem;
+}
+
+.container {
+  max-width: 39.75rem;
+  margin: 3.125rem 0;
+}
+@media (min-width: 37.5rem) {
+  .container {
+    min-height: 29.8125rem;
+  }
+}
+
+.py-card {
+  padding: 1.875rem 1.5625rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  color: var(--gray-blue);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.4784313725) 0px 16px 50px -16px;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+@media (min-width: 37.5rem) {
+  .card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.card__header {
+  background-color: white;
+}
+@media (min-width: 37.5rem) {
+  .card__header {
+    grid-column: 1/3;
+  }
+}
+.card__header h2 {
+  color: var(--drk-cyan);
+  margin-bottom: 1.875rem;
+}
+.card__header h3 {
+  color: var(--bright-yellow);
+  margin-bottom: 1.5rem;
+}
+.card__header p {
+  line-height: 1.5;
+}
+.card__subscription {
+  background-color: var(--drk-cyan);
+  color: white;
+}
+.card__subscription h1 {
+  margin-bottom: 1.5625rem;
+}
+.card__subscription .price {
+  display: inline-block;
+  font-size: 1.875rem;
+  margin-bottom: 0.9375rem;
+  margin-right: 0.875rem;
+}
+.card__subscription .per {
+  display: inline-block;
+  color: rgba(244, 244, 244, 0.9176470588);
+}
+.card__subscription p {
+  color: white;
+}
+.card__subscription .btn {
+  background-color: var(--bright-yellow);
+  display: block;
+  text-align: center;
+  border-radius: 0.375rem;
+  width: 100%;
+  padding: 1rem 0;
+  transition: 300ms ease-in;
+  box-shadow: rgba(0, 0, 0, 0.4784313725) 0px 16px 50px -16px;
+}
+.card__subscription .btn:hover {
+  background-color: hsl(71deg, 73%, 45%);
+}
+.card__description {
+  background-color: var(--light-cyan);
+  color: var(--light-gray);
+}
+.card__description ul li:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=style.css.map */
