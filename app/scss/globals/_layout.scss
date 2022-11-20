@@ -23,11 +23,15 @@ body {
   max-width: rem(636);
   margin: rem(50) 0;
 
+  & > div {
+    padding: rem(30) rem(25);
+
+    @include breakpoint-up(medium) {
+      padding: rem(42);
+    }
+  }
+
   @include breakpoint-up(medium) {
     min-height: rem(477);
   }
-}
-
-.py-card {
-  padding: rem(30) rem(25);
 }

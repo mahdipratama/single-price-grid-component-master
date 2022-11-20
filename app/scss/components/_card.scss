@@ -44,6 +44,7 @@
     & .price {
       display: inline-block;
       font-size: rem(30);
+      font-weight: bold;
       margin-bottom: rem(15);
       margin-right: rem(14);
     }
@@ -61,6 +62,7 @@
       background-color: var(--bright-yellow);
       display: block;
       text-align: center;
+      font-weight: bold;
       border-radius: rem(6);
       width: 100%;
       padding: rem(16) 0;
@@ -75,7 +77,7 @@
 
   &__description {
     background-color: var(--light-cyan);
-    color: var(--light-gray);
+    color: white;
 
     & ul li:hover {
       opacity: 0.7;
